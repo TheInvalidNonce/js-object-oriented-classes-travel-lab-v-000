@@ -28,8 +28,8 @@ class Route {
     return Math.abs(endIdx - startIdx) + vertical
   }
   
-  estimatedTime() {
-    blocksTravelled()
+  estimatedTime(peakHours) {
+    peakHours ? blocksTravelled() / 2 : blocksTravelled() / 3
   }
   
   
