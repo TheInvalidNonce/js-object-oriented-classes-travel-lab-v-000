@@ -1,1 +1,35 @@
+class Driver {
+  constructor(name, startDate) {
+    this.name = name
+    this.startDate = new Date(startDate)
+  }
+  
+  yearsExperienceFromBeginningOf(year) {
+    return year - this.startDate.getFullYear()
+  }
+  
+}
 
+let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
+
+class Route {
+  constructor(beginningLocation, endingLocation) {
+    this.beginningLocation = beginningLocation
+    this.endingLocation = endingLocation
+  
+  }
+  
+  blocksTravelled(beginningLocation, endingLocation) {
+    // debugger;
+    this.vertical = Math.abs(this.endingLocation['vertical'] - this.beginningLocation['vertical'])
+    debugger;
+    this.horizontalEnd = eastWest.indexOf(endingLocation['horizontal'])
+    this.horizontalBegin = eastWest.indexOf(beginningLocation['horizontal'])
+  }
+  
+  estimatedTime() {
+    
+  }
+  
+  
+}
