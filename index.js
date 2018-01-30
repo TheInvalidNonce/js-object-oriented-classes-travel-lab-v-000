@@ -20,9 +20,8 @@ class Route {
   }
   
   blocksTravelled() {
-    // debugger;
     this.vertical = Math.abs(this.endingLocation['vertical'] - this.beginningLocation['vertical'])
-    debugger;
+    this.horizontal = 
     this.horizontalEnd = eastWest.indexOf(endingLocation['horizontal'])
     this.horizontalBegin = eastWest.indexOf(beginningLocation['horizontal'])
   }
