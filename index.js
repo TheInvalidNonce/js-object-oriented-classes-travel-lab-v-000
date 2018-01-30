@@ -19,7 +19,7 @@ class Route {
   
   }
   
-  blocksTravelled(beginningLocation, endingLocation) {
+  blocksTravelled() {
     // debugger;
     this.vertical = Math.abs(this.endingLocation['vertical'] - this.beginningLocation['vertical'])
     debugger;
