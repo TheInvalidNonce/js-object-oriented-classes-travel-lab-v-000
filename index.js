@@ -28,8 +28,8 @@ class Route {
     return Math.abs(endIdx - startIdx) + vertical
   }
   
-  estimatedTime(blocksTravelled) {
-    
+  estimatedTime() {
+    return blocksTravelled()
   }
   
   
