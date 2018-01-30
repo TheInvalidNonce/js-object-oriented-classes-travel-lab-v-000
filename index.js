@@ -20,8 +20,8 @@ class Route {
   }
   
   blocksTravelled() {
-    this.vertical = Math.abs(this.endingLocation['vertical'] - this.beginningLocation['vertical'])
-    this.horizontal = Math.abs(eastWest.indexOf(this.endingLocation[horizontal]) - eastWest.indexOf(beginningLocation['horizontal']))
+    vertical = Math.abs(this.endingLocation['vertical'] - this.beginningLocation['vertical'])
+    horizontal = Math.abs(eastWest.indexOf(this.endingLocation[horizontal]) - eastWest.indexOf(beginningLocation['horizontal']))
     return this.vertical + this.horizontal
   }
   
