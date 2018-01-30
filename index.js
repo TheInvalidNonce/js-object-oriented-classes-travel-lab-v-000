@@ -21,9 +21,7 @@ class Route {
   
   blocksTravelled() {
     this.vertical = Math.abs(this.endingLocation['vertical'] - this.beginningLocation['vertical'])
-    this.horizontal = 
-    this.horizontalEnd = eastWest.indexOf(endingLocation['horizontal'])
-    this.horizontalBegin = eastWest.indexOf(beginningLocation['horizontal'])
+    this.horizontal = eastWest.indexOf(this.endingLocation[horizontal]) - eastWest.indexOf(beginningLocation['horizontal'])
   }
   
   estimatedTime() {
